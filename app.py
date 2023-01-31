@@ -132,9 +132,7 @@ def slip_info():
         data_byte = bytearray(mini_qr_data[0:-4].encode())
         crc = slip.crc_iso13239(data_byte)
         crc_hex = hex(crc)[2:].upper()
-        is_match = 0
-        if crc_hex == checksum:
-           is_match = 1
+        is_match = 0 if checksum != crc_hex else 1
         info['CRC_CHECKSUM'] = crc_hex
         info['CRC_IS_MATCH'] = is_match
     else:
