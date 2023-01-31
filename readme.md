@@ -16,7 +16,12 @@ Add a new app and retrieve the app details, including the CONSUMER ID and CONSUM
 edit docker-compose.yml
 
 ## Install
+```bash
+git clone https://github.com/pratomrerk/slip-verification.git .
+cat ./slip-verification/docker-compose.example > docker-compose.yml
+vim docker-compose.yml # edit environment variables
 docker-compose up -d --build slip-verification
+```
 
 ## Usage
 Get slip miniQR information
