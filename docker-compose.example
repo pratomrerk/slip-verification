@@ -15,3 +15,5 @@ services:
       - SCB_API_SECRET=1
       - TZ=Asia/Bangkok
       - PYTHONUNBUFFERED=1
+    volumes:
+      - ./slip-verification/upload:/app/upload
