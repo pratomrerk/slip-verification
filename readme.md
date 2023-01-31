@@ -2,16 +2,18 @@
 View docker-compose.example for an example to docker-compose.yml and edit the environment variables.
 
 ## Environment variables
-# SCB
-https://developer.scb/#/management/apps
+
+SCB https://developer.scb/#/management/apps
+
 Add a new app and retrieve the app details, including the API Key and 	API Secret.
-# KBANK
-https://apiportal.kasikornbank.com/app/my-app
+
+
+KBANK https://apiportal.kasikornbank.com/app/my-app
+
 Add a new app and retrieve the app details, including the CONSUMER ID and CONSUMER SECRET.
 
+
 edit docker-compose.yml
-KBANK_CONSUMER_ID=<CONSUMER ID>
-KBANK_CONSUMER_SECRET=<CONSUMER SECRET>
 
 ## Install
 docker-compose up -d --build slip-verification
