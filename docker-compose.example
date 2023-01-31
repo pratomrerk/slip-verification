@@ -3,7 +3,7 @@ version: '3.7'
 services:
 
   slip-verification:
-    build: ./slip_verification
+    build: ./slip-verification
     container_name: slip-verification
     restart: unless-stopped
     environment:
