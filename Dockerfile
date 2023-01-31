@@ -6,9 +6,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 WORKDIR /app
 COPY . /app
 RUN pip install -r requirements.txt
-
-#ENV KBANK_CONSUMER_ID=
-#ENV KBANK_CONSUMER_SECRET=
-
 EXPOSE 9111
 CMD ["python", "app.py"]

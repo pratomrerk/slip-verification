@@ -7,8 +7,11 @@ services:
     container_name: slip-verification
     restart: unless-stopped
     environment:
+      - USE_BANKS=SCB,KBANK
       - KBANK_CONSUMER_ID=1
       - KBANK_CONSUMER_SECRET=1
       - KBANK_TEST_MODE=false
+      - SCB_API_KEY=1
+      - SCB_API_SECRET=1
       - TZ=Asia/Bangkok
       - PYTHONUNBUFFERED=1

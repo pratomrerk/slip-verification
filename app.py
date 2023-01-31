@@ -184,10 +184,6 @@ def verifier():
     use_banks = os.environ.get('USE_BANKS', 'KBANK,SCB').split(',')
     use_banks = random.sample(use_banks, len(use_banks))
     for bank in use_banks:
-        if os.environ.get('USE_' + bank, '1') == '0':
-            use_banks.remove(bank)
-    
-    for bank in use_banks:
         if response is not None:
             break
         if bank == 'SCB':

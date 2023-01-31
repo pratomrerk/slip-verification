@@ -11,8 +11,8 @@ import datetime as dt
 class scb:
 
     def __init__(self, USER_AGENT):
-        self.SCB_API_KEY = os.environ.get('SCB_API_KEY', 'l7f11ea7d72fdd4adf881949b66eb2b87e')
-        self.SCB_API_SECRET = os.environ.get('SCB_API_SECRET', 'd9f1bf3540334f8087a2f04375621765')
+        self.SCB_API_KEY = os.environ.get('SCB_API_KEY', '1')
+        self.SCB_API_SECRET = os.environ.get('SCB_API_SECRET', '1')
         self.SCB_ACCESS_TOKEN = None
         self.USER_AGENT = USER_AGENT
         self.BASE_URL = 'https://api-sandbox.partners.scb/partners/sandbox'
