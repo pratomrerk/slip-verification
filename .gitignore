@@ -1,4 +1,5 @@
 env
 upload/*
+models/__pycache__
 docker-compose.production
 slip.test.jpg
