@@ -10,7 +10,7 @@ services:
       - USE_BANKS=SCB,KBANK
       - KBANK_CONSUMER_ID=1
       - KBANK_CONSUMER_SECRET=1
-      - KBANK_TEST_MODE=false
+      - KBANK_TEST_MODE=0
       - SCB_API_KEY=1
       - SCB_API_SECRET=1
       - TZ=Asia/Bangkok
