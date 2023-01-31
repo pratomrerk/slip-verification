@@ -48,7 +48,7 @@ class scb:
             'requestUId': self.requestUId,
             'resourceOwnerID': self.SCB_API_KEY,
             'Content-Type': 'application/json',
-            #'User-Agent': self.USER_AGENT,
+            'User-Agent': self.USER_AGENT,
         }
         print(headers)
         response = requests.get(url, headers=headers)
