@@ -1,0 +1,4 @@
+env
+upload/*
+docker-compose.production
+slip.test.jpg

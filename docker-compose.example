@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+
+  slip-verification:
+    build: ./slip_verification
+    container_name: slip-verification
+    restart: unless-stopped
+    environment:
+      - KBANK_CONSUMER_ID=1
+      - KBANK_CONSUMER_SECRET=1
+      - KBANK_TEST_MODE=false
+      - TZ=Asia/Bangkok
+      - PYTHONUNBUFFERED=1
