@@ -18,7 +18,7 @@ edit docker-compose.yml
 ## Install
 ```bash
 git clone https://github.com/pratomrerk/slip-verification.git .
-cat ./slip-verification/docker-compose.example > docker-compose.yml
+cat ./slip-verification/docker-compose.example > ./docker-compose.yml
 vim docker-compose.yml # edit environment variables
 docker-compose up -d --build slip-verification
 ```
