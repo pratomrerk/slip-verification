@@ -2,7 +2,11 @@
 View docker-compose.example for an example to docker-compose.yml and edit the environment variables.
 
 ## Environment variables
-apiportal : https://apiportal.kasikornbank.com/app/my-app
+# SCB
+https://developer.scb/#/management/apps
+Add a new app and retrieve the app details, including the API Key and 	API Secret.
+# KBANK
+https://apiportal.kasikornbank.com/app/my-app
 Add a new app and retrieve the app details, including the CONSUMER ID and CONSUMER SECRET.
 
 edit docker-compose.yml
