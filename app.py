@@ -201,4 +201,11 @@ def verifier():
 if __name__ == '__main__':
 
     app.run(port=9111, debug=True)
-    
+
+
+@app.route('/health-check', methods=['GET'])
+def health_check():
+    return jsonify({
+        'statusCode': 200,
+        'message': 'OK'
+    })
